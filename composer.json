@@ -1,0 +1,21 @@
+{
+    "name": "anpk12/sysinfo",
+    "type": "library",
+    "description": "Reads info about memory usage, cpu, load etc",
+    "keywords": ["sysinfo", "memory", "cpu", "load"],
+    "homepage": "https://github.com/anpk12/sysinfo.git",
+    "license": "GPL-3.0",
+    "authors": [
+    {
+        "name": "Anton Petersson",
+        "email": "anpk12@student.bth.se",
+        "role": "Developer"
+    }
+    ],
+    "require": {
+        "php": ">=5.4"
+    },
+    "autoload": {
+        "psr-4": { "Anpk12\\": "src/" }
+    }
+}

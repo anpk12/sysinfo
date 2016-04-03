@@ -1,0 +1,11 @@
+This is a simple script for retrieving information
+about the host system that the code (typically web
+application) is running on, so that it can be
+presented on a web page, and/or graphed over time.
+Or perhaps it can be used to detect situations
+where the system is running low on resources.
+
+It is made as part of an online course in web
+development. So I was forced to make this available
+on github and packagist. Maybe it can be useful
+for someone.
