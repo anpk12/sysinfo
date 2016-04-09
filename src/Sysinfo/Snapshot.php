@@ -57,17 +57,12 @@ class Snapshot
             throw new Exception("failed to read meminfo");
         while ( ($str = fgets($f)) != FALSE )
         {
-            echo "parsing string '$str'...<br />";
             $numMatches = preg_match_all(
             "/([[:alpha:]()_0-9]+):\s+([0-9]+)(?:\s([[:alpha:]]+)){0,1}/",
                 $str, $entry, PREG_SPLIT_DELIM_CAPTURE);
-            echo var_dump($entry);
-            echo "<br />";
-            //echo var_dump($entry);
             if ( $numMatches > 0 )
             {
                 $key = $entry[0][1];
-                echo "inserting $key => " . $entry[0][2] . "<br />";
                 $newEntry = array('value' => $entry[0][2]);
                 if ( isset($entry[0][3]) )
                 {
@@ -140,8 +135,6 @@ class Snapshot
 
         return $html;
     }
-
-
 };
 
 function entryStr($entry)
