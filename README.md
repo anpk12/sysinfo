@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/anpk12/sysinfo.svg?branch=master)](https://travis-ci.org/anpk12/sysinfo)
+
 This is a simple script for retrieving information
 about the host system that the code (typically web
 application) is running on, so that it can be
