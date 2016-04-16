@@ -1,4 +1,6 @@
 [![Build Status](https://travis-ci.org/anpk12/sysinfo.svg?branch=master)](https://travis-ci.org/anpk12/sysinfo)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/anpk12/sysinfo/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/anpk12/sysinfo/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/anpk12/sysinfo/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/anpk12/sysinfo/?branch=master)
 
 This is a simple script for retrieving information
 about the host system that the code (typically web
