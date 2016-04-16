@@ -98,7 +98,7 @@ class Snapshot
     {
         $report = "<h2>Host system stats</h2>";
         $report .= "<h3>Memory</h3>";
-        if ( $summary == true )
+        if ( $summary === true )
         {
             $mema = $this->memAvailable();
             $memt = $this->memTotal();
@@ -144,4 +144,3 @@ function entryStr($entry)
     return $entry['value'].$entry['unit'];
 }
 
-?>
