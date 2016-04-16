@@ -22,8 +22,10 @@ namespace Anpk12\Sysinfo;
 
 class Snapshot
 {
-    function __construct()
+    private $procDir;
+    function __construct($procDir='/proc')
     {
+        $this->procDir = $procDir;
         $this->readLoadAvg();
         $this->readMeminfo();
     }
@@ -31,7 +33,7 @@ class Snapshot
     private $loadavgData = [];
     private function readLoadAvg()
     {
-        $f = fopen("/proc/loadavg", "r");
+        $f = fopen($this->procDir . "/loadavg", "r");
         if ( !$f )
             throw new Exception("failed to read loadavg");
         if ( ($str = fgets($f)) != FALSE )
@@ -51,7 +53,7 @@ class Snapshot
     private $meminfoData = [];
     private function readMeminfo()
     {
-        $f = fopen("/proc/meminfo", "r");
+        $f = fopen($this->procDir . "/meminfo", "r");
         $this->meminfoData = [];
         if ( !$f )
             throw new Exception("failed to read meminfo");
